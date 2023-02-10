@@ -1,4 +1,5 @@
 $backgroundcolor:#DEE2E6;
+$secondcolor:pink;
 .navbar{
     display: flex;
     flex-direction: row;
@@ -22,10 +23,16 @@ $backgroundcolor:#DEE2E6;
 }
 
 .shop{
-    display: grid;
-    grid-template-columns: repeat(5,223px);
-    gap: 30px;
+    display: flex;
+    // display: grid;
+    // grid-template-columns: repeat(5,223px);
+    // gap: 30px;
     justify-content: center;
+}
+
+.products{
+    justify-content:space-between;
+    padding-top:60px;
 }
 
 .item{
@@ -90,3 +97,32 @@ h6{
 #cartItem{
     background-color: pink;
 }
+
+button{
+    border: none;
+    font-size: 19px;
+    color: white;
+    font-family:serif;
+    background-color:aqua;
+    border-radius: 7px;
+    width:120px;
+}
+#total,#total-quantity,#Okaikei,#cartItem, .bgc{
+    background-color: pink;
+}
+
+#total{
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+#cartItem{
+    padding-top: 30px;
+    padding-left:30px ;
+    padding-right:30px ;
+}
+.bgc{
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+

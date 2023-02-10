@@ -5,7 +5,7 @@
       "description": "The latest iPhone model with advanced camera features and powerful performance.",
       "imageUrl": "https://1.bp.blogspot.com/-NOU4Vn7yW84/X9GX3MNKruI/AAAAAAABcqU/FIFxd04wg_Qda1RMLrd0ThpTaRxiNB4jgCNcBGAsYHQ/s180-c/bird_crested_duck_ahiru.png",
       "price": 1149.00,
-      "count":0
+      "numberOfUnit":1
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
       "description": "A high-end smartphone with a large screen and top-of-the-line camera technology.",
       "imageUrl": "https://1.bp.blogspot.com/-_0tLdAB6wVs/X7zMVCQ8k7I/AAAAAAABcZ4/BS-S_XwqcdkQJaX4wSVdkLi1dMVjQiInACNcBGAsYHQ/s180-c/bird_gachou.png",
       "price": 1149.00,
-      "count":0
+      "numberOfUnit":1
     },
     {
       "id": 3,
@@ -21,6 +21,6 @@
       "description": "A smartphone with a sleek design and advanced camera features powered by Google.",
       "imageUrl": "https://1.bp.blogspot.com/-bxlD0epIwJY/X7zMVGrK_EI/AAAAAAABcZw/Xgmc3-cnfOsuGQqDw7GIyNjOPXkmXRKtwCNcBGAsYHQ/s180-c/bird_shiro_sagi.png",
       "price": 799.00,
-      "count":0
+      "numberOfUnit":1
     }
   ]
