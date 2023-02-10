@@ -5,7 +5,9 @@ const reset = document.getElementById("reset");
 let cartAmount = document.getElementsByClassName("cartAmount")[0];//この行２行あるけど
 // number = insideCart.length;
 let elements = document.getElementById("cart-container");
-//Render products
+
+
+//Render products　商品一覧
 function renderProducts() {
   fetch("./products.json").then(res => res.json())
     .then(data => {
@@ -30,8 +32,12 @@ function renderProducts() {
     })
 }
 renderProducts();
+
 let insideCart = [];
 let addCartButton = document.querySelectorAll(".add-cart");
+
+
+
 //Add item to cart
 function addItem(itemId){
   fetch("./products.json").then(res =>res.json())
@@ -45,34 +51,17 @@ function addItem(itemId){
   cartAmount.innerHTML = number;
       renderCartItems(insideCart);
 
-      //increment the number of unit
-      let dataObj = JSON.parse(data);
-      dataobj.count += 1;
+     //To check the array
+     console.log(insideCart);
+
+     
+
 
     });
 }
 
-//increase the number of item unit
-function increseUnits (){
-  const fs = require('fs');
 
-fs.readFile('./data.json', 'utf-8', (err, data) => {
-  if (err) throw err;
-
-  let dataObj = JSON.parse(data);
-
-  dataObj.count += 1;
-
-  fs.writeFile('./data.json', JSON.stringify(dataObj), (err) => {
-    if (err) throw err;
-    console.log('Value incremented and file updated successfully!');
-  });
-});
-
-
-
-}
-//Render cart items
+//Render cart items　カートの中の商品の表示
 function renderCartItems(arr){
   
   elements.innerHTML ="";
@@ -86,7 +75,7 @@ function renderCartItems(arr){
             <h6 id="name">${product.name}</h6>
             <p id="price">$${product.price}</p>
           </div>
-          <i class="bi bi-trash3"></i>
+          <i onclick="deleteHTML()"class="bi bi-trash3"></i>
         </div>
       `
   });
@@ -98,6 +87,14 @@ function renderCartItems(arr){
   
                          
 }
+function deleteArrayElement(arr){
+
+}
+
+
+// function deleteHTML(){
+//  elements.innerHTML ="";
+// }
 
 function resetitems(){
   elements.innerHTML = "";
