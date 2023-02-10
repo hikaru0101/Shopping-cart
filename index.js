@@ -107,10 +107,10 @@ function renderCartItems(arr){
                          </div>
                          </div>`;
 //アイコンたちを非表示
-   let cartAmount = document.querySelector(".cartAmount");
-                           let cartIcon = document.querySelector(".bi-cart2");
-                           cartAmount.style.display = "none";
-                           cartIcon.style.display = "none";
+  //  let cartAmount = document.querySelector(".cartAmount");
+  //                          let cartIcon = document.querySelector(".bi-cart2");
+  //                          cartAmount.style.display = "none";
+  //                          cartIcon.style.display = "none";
                         //  zeroState();                     
 }
 
@@ -150,10 +150,10 @@ function resetitems(){
   cartAmount.innerHTML = 0;
   insideCart.length= 0;
   //アイコンを表示 でもリセットしたときは再表示されてない
-  let cartAmount = document.querySelector(".cartAmount");
-  let cartIcon = document.querySelector(".bi-cart2");
-  cartAmount.style.display = "block";
-  cartIcon.style.display = "block";
+  // let cartAmount = document.querySelector(".cartAmount");
+  // let cartIcon = document.querySelector(".bi-cart2");
+  // cartAmount.style.display = "block";
+  // cartIcon.style.display = "block";
   
 }
 
@@ -167,10 +167,10 @@ function deleteHTML(itemId){
     if(insideCart.length==0){
       elements.innerHTML="";
       //アイコンを表示
-      let cartAmount = document.querySelector(".cartAmount");
-                           let cartIcon = document.querySelector(".bi-cart2");
-                           cartAmount.style.display = "block";
-                           cartIcon.style.display = "block";
+      // let cartAmount = document.querySelector(".cartAmount");
+      //                      let cartIcon = document.querySelector(".bi-cart2");
+      //                      cartAmount.style.display = "block";
+      //                      cartIcon.style.display = "block";
     }
     
   }
