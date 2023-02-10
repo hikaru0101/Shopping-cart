@@ -4,23 +4,51 @@
       "name": "Apple iPhone 12 Pro Max",
       "description": "The latest iPhone model with advanced camera features and powerful performance.",
       "imageUrl": "https://1.bp.blogspot.com/-NOU4Vn7yW84/X9GX3MNKruI/AAAAAAABcqU/FIFxd04wg_Qda1RMLrd0ThpTaRxiNB4jgCNcBGAsYHQ/s180-c/bird_crested_duck_ahiru.png",
-      "price": 1149.00,
-      "numberOfUnit":1
+      "price": 1149.00
+      
     },
     {
       "id": 2,
       "name": "Samsung Galaxy S21 Ultra",
       "description": "A high-end smartphone with a large screen and top-of-the-line camera technology.",
       "imageUrl": "https://1.bp.blogspot.com/-_0tLdAB6wVs/X7zMVCQ8k7I/AAAAAAABcZ4/BS-S_XwqcdkQJaX4wSVdkLi1dMVjQiInACNcBGAsYHQ/s180-c/bird_gachou.png",
-      "price": 1149.00,
-      "numberOfUnit":1
+      "price": 1149.00
+      
     },
     {
       "id": 3,
       "name": "Google Pixel 6 Pro",
       "description": "A smartphone with a sleek design and advanced camera features powered by Google.",
       "imageUrl": "https://1.bp.blogspot.com/-bxlD0epIwJY/X7zMVGrK_EI/AAAAAAABcZw/Xgmc3-cnfOsuGQqDw7GIyNjOPXkmXRKtwCNcBGAsYHQ/s180-c/bird_shiro_sagi.png",
-      "price": 799.00,
-      "numberOfUnit":1
-    }
+      "price": 799.00
+      
+    },
+    {
+      "id": 4,
+      "name": "OnePlus 9 Pro",
+      "description": "A high-performance smartphone with a smooth and fast experience.",
+      "imageUrl": "https://1.bp.blogspot.com/-dkBk4bYQrTk/XVKfloSYxiI/AAAAAAABUC8/j6K3SGQG0WMxKFn71LzznPz0SPgI5ufGQCLcBGAs/s1600/bird_sekisei_inko_blue.png",
+      "price": 749.00
+      },
+      {
+      "id": 5,
+      "name": "Xiaomi Mi 11 Ultra",
+      "description": "A flagship smartphone with an impressive camera system and high-end specs.",
+      "imageUrl": "https://1.bp.blogspot.com/-Nqqq-_PR3oc/Xb-Z7SW7EhI/AAAAAAABV-c/Y_sr_rTdjBAYdWhInk3wS7U_4z2tTMKaQCNcBGAsYHQ/s1600/bird_inko_sakura.png",
+      "price": 999.00
+      },
+      {
+      "id": 6,
+      "name": "Oppo Find X3 Pro",
+      "description": "A high-end smartphone with a unique design and advanced camera features.",
+      "imageUrl": "https://1.bp.blogspot.com/-GHEgSQ57t2s/XZR9JX5PdLI/AAAAAAABVPY/-bbyzr_tWbg0S6yuSDuJoPXLm_YpSv8xgCNcBGAsYHQ/s1600/bird_inko_yellow_blue.png",
+      "price": 799.00
+      },
+      {
+      "id": 7,
+      "name": "Huawei P50 Pro",
+      "description": "A flagship smartphone with top-of-the-line specs and a cutting-edge camera system.",
+      "imageUrl": "https://3.bp.blogspot.com/-Ncn2Gj8Aq9k/WwJZjGt-FBI/AAAAAAABMF0/5Uco6MFSragyb_xcDgrfuUFZMfx9diW2gCLcBGAs/s800/bird_okameinkogray.png",
+      "price": 999.00
+      }
   ]

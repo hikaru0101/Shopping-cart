@@ -7,6 +7,21 @@ let cartAmount = document.getElementsByClassName("cartAmount")[0];//この行２
 let elements = document.getElementById("cart-container");
 let numberOfUnit = 1;
 
+//カートアイコンと数字を隠す関数
+// function hideCartInfo() {
+//   if(elements.display="block"){
+//   var cartAmount = document.querySelector(".cartAmount");
+//   var cartIcon = document.querySelector(".bi-cart2");
+//   cartAmount.style.display = "none";
+//   cartIcon.style.display = "none";
+// }else{
+//   cartAmount.style.display = "block";
+//   cartIcon.style.display = "block";
+// }
+
+// }
+// hideCartInfo();
+
 
 //Render products　商品一覧
 function renderProducts() {
@@ -76,8 +91,9 @@ function renderCartItems(arr){
           <div class="shousai">
             <h6 id="name">${product.name}</h6>
             <p id="price">$${product.price}</p>
+            <i onclick="deleteHTML(${product.id})"class="bi bi-trash3"></i>
           </div>
-          <i onclick="deleteHTML(${product.id})"class="bi bi-trash3"></i>
+          
         </div>
       `
   });
@@ -90,7 +106,11 @@ function renderCartItems(arr){
                            <button id="checkout">check out</button>
                          </div>
                          </div>`;
-  
+//アイコンたちを非表示
+   let cartAmount = document.querySelector(".cartAmount");
+                           let cartIcon = document.querySelector(".bi-cart2");
+                           cartAmount.style.display = "none";
+                           cartIcon.style.display = "none";
                         //  zeroState();                     
 }
 
@@ -129,6 +149,11 @@ function resetitems(){
   elements.innerHTML = "";
   cartAmount.innerHTML = 0;
   insideCart.length= 0;
+  //アイコンを表示 でもリセットしたときは再表示されてない
+  let cartAmount = document.querySelector(".cartAmount");
+  let cartIcon = document.querySelector(".bi-cart2");
+  cartAmount.style.display = "block";
+  cartIcon.style.display = "block";
   
 }
 
@@ -141,6 +166,11 @@ function deleteHTML(itemId){
   function zeroState(){
     if(insideCart.length==0){
       elements.innerHTML="";
+      //アイコンを表示
+      let cartAmount = document.querySelector(".cartAmount");
+                           let cartIcon = document.querySelector(".bi-cart2");
+                           cartAmount.style.display = "block";
+                           cartIcon.style.display = "block";
     }
     
   }

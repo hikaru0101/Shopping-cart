@@ -4,15 +4,32 @@ $secondcolor:pink;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #DEE2E6;
+    background-color: aqua;
     color:black;
     padding: 25px 60px;
 }
+.shousai{
+    display:flex;
+    // justify-content: space-around;
+    gap: 10px;
+    align-items: baseline;
+    i{
+        // align-self:
+    }
+}
+
+body{
+    background-color:#DEE2E6;
+}
 //カートと赤い数字はもう隠すことにする
+
+i{
+    font-size: 40px;
+}
 .cart{
     position: relative;
     // display: flex;
-    background-color:$backgroundcolor;
+    background-color:aqua;
     color: black;
     font-size: 30px;
     padding:5px;
@@ -22,16 +39,23 @@ $secondcolor:pink;
 
 }
 
+h1{
+    color: blue;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .shop{
-    display: flex;
-    // display: grid;
-    // grid-template-columns: repeat(5,223px);
-    // gap: 30px;
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,223px);
+    gap: 30px;
     justify-content: center;
 }
 
 .products{
-    justify-content:space-between;
+    // justify-content:;
     padding-top:60px;
 }
 
