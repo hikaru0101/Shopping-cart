@@ -20,9 +20,7 @@ function renderProducts() {
             <div class="price-quantity">
                 <h2>${product.price}</h2>
                 <div class="buttons">
-                    <i class="bi bi-dash-square-fill"></i>
-                    <div class="quantity">0</div>
-                    <i class="bi bi-plus-square-fill"></i>
+                    
                     <button onclick="addItem(${product.id})" class="add-cart">add to cart</button>
                 </div>
             </div>
@@ -38,7 +36,8 @@ let addCartButton = document.querySelectorAll(".add-cart");
 
 
 
-//Add item to cart
+
+//Add item to cart  addボタンとつながってる
 function addItem(itemId){
   fetch("./products.json").then(res =>res.json())
     .then(data =>{
@@ -49,23 +48,25 @@ function addItem(itemId){
   console.log(number);
   let cartAmount = document.getElementsByClassName("cartAmount")[0];//getを使うときは宣言する必要がある
   cartAmount.innerHTML = number;
+  // cartAmount.innerHTML = insideCart.length;
       renderCartItems(insideCart);
 
      //To check the array
      console.log(insideCart);
-
-     
-
-
     });
+
 }
 
 
-//Render cart items　カートの中の商品の表示
+
+//Render cart items　カートの中の商品の表示　オブジェクトごと配列に入るから画像とかのプロパティにアクセスできる
 function renderCartItems(arr){
   
   elements.innerHTML ="";
   let totalAmount = arr.reduce((acc, item) => acc + item.price, 0);
+
+
+
   arr.forEach(product =>{
     elements.innerHTML +=
       `
@@ -75,39 +76,53 @@ function renderCartItems(arr){
             <h6 id="name">${product.name}</h6>
             <p id="price">$${product.price}</p>
           </div>
-          <i onclick="deleteHTML()"class="bi bi-trash3"></i>
+          <i onclick="deleteHTML(${product.id})"class="bi bi-trash3"></i>
         </div>
       `
   });
   elements.innerHTML += `<h6 id="total">Total: $${totalAmount}</h6>
+                        <h6 id="total-quantity">Item Amount:${insideCart.length}</h6>
                          <div class="Okaikei">
                            <button onclick="resetitems()" id="reset">reset</button>
                            <button id="checkout">check out</button>
                          </div>`;
   
-                         
-}
-function deleteArrayElement(arr){
-
+                        //  zeroState();                     
 }
 
-
-// function deleteHTML(){
-//  elements.innerHTML ="";
-// }
 
 function resetitems(){
   elements.innerHTML = "";
   cartAmount.innerHTML = 0;
   insideCart.length= 0;
+  
+}
+
+function deleteHTML(itemId){
+  let deletedArray = insideCart.filter(item => item.id !== itemId);
+  insideCart = deletedArray;
+  renderCartItems(insideCart);
+  console.log(insideCart);
+  cartAmount.innerHTML= insideCart.length
+  function zeroState(){
+    if(insideCart.length==0){
+      elements.innerHTML="";
+    }
+    
+  }
+  zeroState();
+  
 }
 
 
 
-//あとは個々に消すデリーとボタンと、重複しないように表示、カートの中身を隠す（できれば）
+
+  
 
 
-//チャット
+
+
+//ゼロのときはカートの中身を空にする、重複しないように表示、カートの中身を隠す（できれば）
 
 
 

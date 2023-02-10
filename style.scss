@@ -1,4 +1,4 @@
-$backgroundcolor:#6c757d;
+$backgroundcolor:#DEE2E6;
 .navbar{
     display: flex;
     flex-direction: row;
@@ -7,14 +7,17 @@ $backgroundcolor:#6c757d;
     color:black;
     padding: 25px 60px;
 }
-
+//カートと赤い数字はもう隠すことにする
 .cart{
     position: relative;
-    background-color: #fff;
+    // display: flex;
+    background-color:$backgroundcolor;
     color: black;
     font-size: 30px;
     padding:5px;
     border-radius: 3px;
+  
+    
 
 }
 
@@ -76,4 +79,14 @@ item-container.div{
 
 h6{
     color: aqua;
+}
+
+.navbar{
+    height:100px;
+}
+.cart-container{
+    background-color: pink;
+}
+#cartItem{
+    background-color: pink;
 }

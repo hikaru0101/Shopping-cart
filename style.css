@@ -9,7 +9,7 @@
 
 .cart {
   position: relative;
-  background-color: #fff;
+  background-color: #DEE2E6;
   color: black;
   font-size: 30px;
   padding: 5px;
@@ -72,4 +72,16 @@ item-container.div {
 
 h6 {
   color: aqua;
+}
+
+.navbar {
+  height: 100px;
+}
+
+.cart-container {
+  background-color: pink;
+}
+
+#cartItem {
+  background-color: pink;
 }/*# sourceMappingURL=style.css.map */
